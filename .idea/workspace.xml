@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95682f0b-a170-4237-91a7-8292ca623a88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/group_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group.go" beforeDir="false" afterPath="$PROJECT_DIR$/group.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/group_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/store.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestRouteGroup in routing">
+  <component name="RunManager" selected="Go Test.TestStoreAdd in routing">
     <configuration name="TestNewHTTPError in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="routing" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,8 +78,28 @@
       <pattern value="^TestRouteNew$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestStoreAdd in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="routing" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="routing" />
+      <pattern value="^TestStoreAdd$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_buildURLTemplate in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="routing" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="routing" />
+      <pattern value="^Test_buildURLTemplate$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStoreAdd in routing" />
+        <item itemvalue="Go Test.Test_buildURLTemplate in routing" />
         <item itemvalue="Go Test.TestRouteGroup in routing" />
         <item itemvalue="Go Test.TestNewHTTPError in routing" />
         <item itemvalue="Go Test.TestRouteNew in routing" />
