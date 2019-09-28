@@ -84,6 +84,10 @@ func (r *Route) Name(name string) *Route {
 	return r
 }
 
+func (r *Route) Get(handler ...Handler) *Route {
+	return r.register("GET",handler...)
+}
+
 // Post Post方法 给当前的路由 增加 post方法
 func (r *Route) Post(handlers ...Handler) *Route {
 	return r.register("POST", handlers...)
@@ -136,4 +140,12 @@ func (r *Route) URL(pairs ...interface{}) string {
 		s = strings.Replace(s, name, value, -1)
 	}
 	return s
+}
+
+
+func combineHandlers(h1 []Handler, h2 []Handler) []Handler {
+	hh := make([]Handler, len(h1)+len(h2))
+	copy(hh, h1)
+	copy(hh[len(h1):], h2)
+	return hh
 }
