@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95682f0b-a170-4237-91a7-8292ca623a88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/group.go" beforeDir="false" afterPath="$PROJECT_DIR$/group.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/route.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/router.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestNewHTTPError in routing">
+  <component name="RunManager" selected="Go Test.TestRouteGroup in routing">
     <configuration name="TestNewHTTPError in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="routing" />
       <working_directory value="$PROJECT_DIR$" />
@@ -64,6 +59,15 @@
       <kind value="PACKAGE" />
       <package value="routing" />
       <pattern value="^TestNewHTTPError$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestRouteGroup in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="routing" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="routing" />
+      <pattern value="^TestRouteGroup$" />
       <method v="2" />
     </configuration>
     <configuration name="TestRouteNew in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -77,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestRouteGroup in routing" />
         <item itemvalue="Go Test.TestNewHTTPError in routing" />
         <item itemvalue="Go Test.TestRouteNew in routing" />
       </list>
@@ -112,6 +117,11 @@
           <url>file://$PROJECT_DIR$/route.go</url>
           <line>39</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/error_test.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

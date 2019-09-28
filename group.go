@@ -15,7 +15,7 @@ func newRouteGroup(prefix string, router *Router, handlers []Handler) *RouteGrou
 	// 在router 路由下面创建路由组
 	return &RouteGroup{
 		prefix:   prefix,
-		router:   router,
+		router:   router,  // 上级路由
 		handlers: handlers,
 	}
 }

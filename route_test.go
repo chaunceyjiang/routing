@@ -25,3 +25,27 @@ func TestRouteNew(t *testing.T) {
 	_, exists = router.routes[r2.name]
 	assert.True(t, exists, "router.routes[name] is ")
 }
+
+func Test_buildURLTemplate(t *testing.T) {
+	tests :=[]struct{
+		path,expected string
+	}{
+		{"", ""},
+		{"/users", "/users"},
+		{"<id>", "<id>"},
+		{"<id", "<id"},
+		{"/users/<id>", "/users/<id>"},
+		{"/users/<id:\\d+>", "/users/<id>"},
+		{"/users/<:\\d+>", "/users/<>"},
+		{"/users/<id>/xyz", "/users/<id>/xyz"},
+		{"/users/<id:\\d+>/xyz", "/users/<id>/xyz"},
+		{"/users/<id:\\d+>/<test>", "/users/<id>/<test>"},
+		{"/users/<id:\\d+>/<test>/", "/users/<id>/<test>/"},
+		{"/users/<id:\\d+><test>", "/users/<id><test>"},
+		{"/users/<id:\\d+><test>/", "/users/<id><test>/"},
+	}
+
+	for _,test :=range tests{
+		assert.Equal(t,test.expected,buildURLTemplate(test.path))
+	}
+}

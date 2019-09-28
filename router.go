@@ -25,7 +25,7 @@ type (
 		notFound         []Handler
 		notFoundHandlers []Handler
 	}
-
+	// 这里采用了 接口 而不是具体类型，方便自定义 存储
 	routeStore interface {
 		Add(key string, data interface{}) int
 		Get(key string, pvalues []string) (data interface{}, pnames []string)
@@ -33,6 +33,7 @@ type (
 	}
 )
 
+// New  创建顶级路由
 func New() *Router {
 	r :=&Router{
 		RouteGroup:       RouteGroup{},
