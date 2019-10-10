@@ -8,7 +8,7 @@ import (
 )
 
 /*
-	前缀数
+	前缀树
 */
 
 // node 节点
@@ -86,8 +86,8 @@ func (n *node) add(key string, data interface{}, order int) int {
 		pindex:    n.pindex,
 		pnames:    n.pnames,
 	}
-
-	n.key = n.key[matched:]
+	// 保留公共前缀部分
+	n.key = n.key[0:matched]
 	n.data = nil
 	n.pchildren = make([]*node, 0)
 	// FIXME
@@ -123,6 +123,7 @@ func (n *node) addChild(key string, data interface{}, order int) int {
 
 		if p1 > 0 {
 			child.key = key[:p0]
+			n = child
 		} else {
 			child.data = data
 			child.order = order
@@ -162,7 +163,7 @@ func (n *node) addChild(key string, data interface{}, order int) int {
 	pnames[len(n.pnames)] = pname // 覆盖参数路径
 
 	child.pnames = pnames
-	child.pindex = len(pattern) - 1
+	child.pindex = len(pnames) - 1
 	n.pchildren = append(n.pchildren, child)
 
 	if p1 == len(key)-1 {
@@ -184,7 +185,7 @@ repeat:
 			// 当前的节点key 比要查找的key 还要大
 			return
 		}
-		for i := nkl - 1; i >= 0; i++ {
+		for i := nkl - 1; i >= 0; i-- {
 			// 要查找的key 跟 现有的key 没有相同的字符
 			if n.key[i] != key[i] {
 				return
@@ -223,7 +224,7 @@ repeat:
 	if len(key) > 0 {
 		if child := n.children[key[0]]; child != nil {
 			if len(n.pchildren) == 0 {
-				fmt.Println(child.pnames)
+				//fmt.Println(child.pnames)
 				// 使用goto 语句 避免递归时，没有参数还在节点
 				n = child   // 将n的环境修改问当前child
 				goto repeat // 继续处理后面的内容

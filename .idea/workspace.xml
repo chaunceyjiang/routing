@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95682f0b-a170-4237-91a7-8292ca623a88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/store_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/group_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,16 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestStoreAdd in routing">
-    <configuration name="TestNewHTTPError in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="routing" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="routing" />
-      <pattern value="^TestNewHTTPError$" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestStoreGet in routing">
     <configuration name="TestRouteGroup in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="routing" />
       <working_directory value="$PROJECT_DIR$" />
@@ -75,6 +65,8 @@
       <framework value="gotest" />
       <kind value="PACKAGE" />
       <package value="routing" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestRouteNew$" />
       <method v="2" />
     </configuration>
@@ -85,6 +77,17 @@
       <kind value="PACKAGE" />
       <package value="routing" />
       <pattern value="^TestStoreAdd$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStoreGet in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="routing" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="routing" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStoreGet$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_buildURLTemplate in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -98,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStoreGet in routing" />
+        <item itemvalue="Go Test.TestRouteNew in routing" />
         <item itemvalue="Go Test.TestStoreAdd in routing" />
         <item itemvalue="Go Test.Test_buildURLTemplate in routing" />
         <item itemvalue="Go Test.TestRouteGroup in routing" />
-        <item itemvalue="Go Test.TestNewHTTPError in routing" />
-        <item itemvalue="Go Test.TestRouteNew in routing" />
       </list>
     </recent_temporary>
   </component>
@@ -114,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -141,6 +146,46 @@
           <url>file://$PROJECT_DIR$/error_test.go</url>
           <line>9</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>226</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store_test.go</url>
+          <line>83</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>125</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>99</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>111</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>165</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store.go</url>
+          <line>129</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/store_test.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
