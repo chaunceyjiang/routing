@@ -8,6 +8,6 @@ type mockStore struct {
 }
 
 func TestRouteGroup(t *testing.T) {
-	//router := New()
-	//
+	router := New()
+	for _,method := range
 }

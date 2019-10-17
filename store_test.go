@@ -17,28 +17,28 @@ func TestStoreAdd(t *testing.T) {
 		entries  []storeTestEntry
 		expected string
 	}{
-//		{
-//			"all static",
-//			[]storeTestEntry{
-//				{"/gopher/bumper.png", "1", 0},
-//				{"/gopher/bumper192x108.png", "2", 0},
-//				{"/gopher/doc.png", "3", 0},
-//				{"/gopher/bumper320x180.png", "4", 0},
-//				{"/gopher/docpage.png", "5", 0},
-//				{"/gopher/doc.png", "6", 0},
-//				{"/gopher/doc", "7", 0},
-//			},
-//			`{key: , regex: <nil>, data: <nil>, order: 0, minOrder: 0, pindex: -1, pnames: []}
-//    {key: /gopher/, regex: <nil>, data: <nil>, order: 1, minOrder: 1, pindex: -1, pnames: []}
-//        {key: bumper, regex: <nil>, data: <nil>, order: 1, minOrder: 1, pindex: -1, pnames: []}
-//            {key: .png, regex: <nil>, data: 1, order: 1, minOrder: 1, pindex: -1, pnames: []}
-//            {key: 192x108.png, regex: <nil>, data: 2, order: 2, minOrder: 2, pindex: -1, pnames: []}
-//            {key: 320x180.png, regex: <nil>, data: 4, order: 4, minOrder: 4, pindex: -1, pnames: []}
-//        {key: doc, regex: <nil>, data: 7, order: 7, minOrder: 3, pindex: -1, pnames: []}
-//            {key: .png, regex: <nil>, data: 3, order: 3, minOrder: 3, pindex: -1, pnames: []}
-//            {key: page.png, regex: <nil>, data: 5, order: 5, minOrder: 5, pindex: -1, pnames: []}
-//`,
-//		},
+		{
+			"all static",
+			[]storeTestEntry{
+				{"/gopher/bumper.png", "1", 0},
+				{"/gopher/bumper192x108.png", "2", 0},
+				{"/gopher/doc.png", "3", 0},
+				{"/gopher/bumper320x180.png", "4", 0},
+				{"/gopher/docpage.png", "5", 0},
+				{"/gopher/doc.png", "6", 0},
+				{"/gopher/doc", "7", 0},
+			},
+			`{key: , regex: <nil>, data: <nil>, order: 0, minOrder: 0, pindex: -1, pnames: []}
+   {key: /gopher/, regex: <nil>, data: <nil>, order: 1, minOrder: 1, pindex: -1, pnames: []}
+       {key: bumper, regex: <nil>, data: <nil>, order: 1, minOrder: 1, pindex: -1, pnames: []}
+           {key: .png, regex: <nil>, data: 1, order: 1, minOrder: 1, pindex: -1, pnames: []}
+           {key: 192x108.png, regex: <nil>, data: 2, order: 2, minOrder: 2, pindex: -1, pnames: []}
+           {key: 320x180.png, regex: <nil>, data: 4, order: 4, minOrder: 4, pindex: -1, pnames: []}
+       {key: doc, regex: <nil>, data: 7, order: 7, minOrder: 3, pindex: -1, pnames: []}
+           {key: .png, regex: <nil>, data: 3, order: 3, minOrder: 3, pindex: -1, pnames: []}
+           {key: page.png, regex: <nil>, data: 5, order: 5, minOrder: 5, pindex: -1, pnames: []}
+`,
+		},
 		{
 			"parametric",
 			[]storeTestEntry{
@@ -58,24 +58,24 @@ func TestStoreAdd(t *testing.T) {
                     {key: /address, regex: <nil>, data: 13, order: 3, minOrder: 3, pindex: 1, pnames: [id accnt]}
 `,
 		},
-//		{
-//			"corner cases",
-//			[]storeTestEntry{
-//				{"/users/<id>/test/<name>", "101", 2},
-//				{"/users/abc/<id>/<name>", "102", 2},
-//				{"", "103", 0},
-//			},
-//			`{key: , regex: <nil>, data: 103, order: 3, minOrder: 0, pindex: -1, pnames: []}
-//    {key: /users/, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: -1, pnames: []}
-//        {key: abc/, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: -1, pnames: []}
-//            {key: <id>, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: 0, pnames: [id]}
-//                {key: /, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: 0, pnames: [id]}
-//                    {key: <name>, regex: <nil>, data: 102, order: 2, minOrder: 2, pindex: 1, pnames: [id name]}
-//        {key: <id>, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: 0, pnames: [id]}
-//            {key: /test/, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: 0, pnames: [id]}
-//                {key: <name>, regex: <nil>, data: 101, order: 1, minOrder: 1, pindex: 1, pnames: [id name]}
-//`,
-//		},
+		{
+			"corner cases",
+			[]storeTestEntry{
+				{"/users/<id>/test/<name>", "101", 2},
+				{"/users/abc/<id>/<name>", "102", 2},
+				{"", "103", 0},
+			},
+			`{key: , regex: <nil>, data: 103, order: 3, minOrder: 0, pindex: -1, pnames: []}
+   {key: /users/, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: -1, pnames: []}
+       {key: abc/, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: -1, pnames: []}
+           {key: <id>, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: 0, pnames: [id]}
+               {key: /, regex: <nil>, data: <nil>, order: 0, minOrder: 2, pindex: 0, pnames: [id]}
+                   {key: <name>, regex: <nil>, data: 102, order: 2, minOrder: 2, pindex: 1, pnames: [id name]}
+       {key: <id>, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: 0, pnames: [id]}
+           {key: /test/, regex: <nil>, data: <nil>, order: 0, minOrder: 1, pindex: 0, pnames: [id]}
+               {key: <name>, regex: <nil>, data: 101, order: 1, minOrder: 1, pindex: 1, pnames: [id name]}
+`,
+		},
 	}
 	for _, test := range tests {
 		h := newStore()

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95682f0b-a170-4237-91a7-8292ca623a88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/group_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/store_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestStoreGet in routing">
+  <component name="RunManager" selected="Go Test.TestStoreAdd in routing">
     <configuration name="TestRouteGroup in routing" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="routing" />
       <working_directory value="$PROJECT_DIR$" />
@@ -101,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStoreAdd in routing" />
         <item itemvalue="Go Test.TestStoreGet in routing" />
         <item itemvalue="Go Test.TestRouteNew in routing" />
-        <item itemvalue="Go Test.TestStoreAdd in routing" />
         <item itemvalue="Go Test.Test_buildURLTemplate in routing" />
         <item itemvalue="Go Test.TestRouteGroup in routing" />
       </list>
